@@ -1,0 +1,23 @@
+{
+  "name": "vice-city-nights",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An original illustrated Miami slot demo with openly documented replacement mathematics.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && node scripts/prepare-pages.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "offline": "node scripts/package-offline.mjs"
+  },
+  "devDependencies": {
+    "vite": "6.1.0",
+    "typescript": "5.7.3",
+    "tsx": "4.19.2",
+    "@types/node": "22.13.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

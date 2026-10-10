@@ -1,0 +1,149 @@
+/* Reference composition, expressed in original Miami artwork and virtual credits. */
+.game-shell{max-width:1920px;min-height:100svh;display:grid;place-items:center;position:relative}
+.reference-caption{position:absolute;left:10px;top:7px;font-size:11px;line-height:16px;color:#eee7efab;letter-spacing:.2px}
+main.reference-game{width:min(980px,calc(100vw - 430px),calc((100svh - 305px)*1.666667));padding:0;margin:18px 0 0 260px;position:relative}
+.game-stage{display:block;max-width:none;width:100%;margin:0;position:relative}
+.cabinet-wrap{width:100%;position:relative;z-index:3}
+.reference-masthead{height:154px;display:flex;align-items:flex-end;justify-content:flex-end;gap:0;position:relative;padding:0 4px}
+.reference-masthead>.game-logo{width:52%;height:180px;max-width:none;object-fit:contain;position:absolute;left:-100px;bottom:20px;margin:0;filter:drop-shadow(0 5px 3px #0009);z-index:2}
+.prize-face{width:63%;height:90px;display:flex;align-items:center;padding:7px 9px 8px 5px;gap:5px;background:linear-gradient(145deg,#705832,#c0a365 3%,#07121e 5%,#172334 94%,#b99a5e 97%,#402e21);border:2px solid #dbbd7a;box-shadow:0 0 0 3px #080d1e,0 0 25px #00e5ff17;border-radius:5px 5px 0 0}
+.prize-brand{width:29%;text-align:center;transform:skew(-5deg);line-height:1.06;padding-right:3px}
+.prize-brand small{display:block;font-size:8px;font-weight:700;color:#d9a9d3;letter-spacing:.4px;margin-bottom:5px}
+.prize-brand strong{display:block;font-family:Impact,'Arial Black',sans-serif;font-size:clamp(16px,2vw,27px);font-weight:500;color:#ffdf92;text-shadow:0 2px 0 #7a3447,0 0 14px #ff2d9555}
+.prize-brand span{display:block;font-weight:800;font-size:10px;color:#00e5ff;letter-spacing:3px;margin-top:5px}
+.prize-readout{width:71%;min-width:0;text-align:center;background:#070c16;border:1px solid #5d676b;box-shadow:inset 0 0 8px #000;padding:3px 2px 4px}
+#prize-value{display:block;position:relative;font-family:Impact,'Arial Black',sans-serif;font-size:clamp(27px,4.2vw,61px);line-height:1;letter-spacing:.5px;font-weight:900;background:linear-gradient(#fff0a9 5%,#ffcf65 43%,#ff9b57 70%,#ff6684);background-clip:text;-webkit-text-fill-color:transparent}
+#prize-value:after{display:none}
+.loading.loading-ready .loading-progress{display:none}
+.loading.loading-ready #loading-status{font-size:clamp(18px,1.8vw,25px);font-weight:700;color:#f4edf5;line-height:1.4;margin:8px 0 30px;text-shadow:0 2px 12px #071323}
+.prize-readout small{display:block;font-size:6px;letter-spacing:1.2px;line-height:1.5;color:#e1cb9d;margin-top:3px}
+.cabinet{padding:8px;border:2px solid #c1a163;border-radius:0;background:linear-gradient(120deg,#e7c994,#987542 5%,#10192b 7%,#182137 48%,#bb9462 50%,#192033 52%,#121e31 94%,#b99961 97%,#f5dbac);box-shadow:0 0 0 3px #080f24,0 8px 35px #0008}
+.reels{height:auto;aspect-ratio:5/3;gap:3px;border-color:#b4a17860}
+.symbol img{width:94%;height:100%;object-position:center;transform:none}
+/* Frame each painted portrait, excluding transparent sprite padding. */
+.symbol-kingpin{--portrait-size:137.6344%;--portrait-left:-21.1470%;--portrait-top:-6.0932%}
+.symbol-queen{--portrait-size:142.2222%;--portrait-left:-35.5%;--portrait-top:-7.0370%}
+.symbol-enforcer{--portrait-size:139.1304%;--portrait-left:-18.6594%;--portrait-top:-7.9710%}
+.symbol-racer{--portrait-size:112.2807%;--portrait-left:-7.1637%;--portrait-top:-5.5556%}
+.symbol-fixer{--portrait-size:148.8372%;--portrait-left:-25.1938%;--portrait-top:-6.5891%}
+.symbol:is(.symbol-kingpin,.symbol-queen,.symbol-enforcer,.symbol-racer,.symbol-fixer) img{position:absolute;max-width:none;width:var(--portrait-size);height:var(--portrait-size);left:var(--portrait-left);top:var(--portrait-top);object-fit:fill;object-position:center;transform:none}
+.symbol-car img{width:99%;height:95%;object-position:center}
+.symbol-cocktail img{width:90%;height:93%;object-position:center}
+.symbol-cash img,.symbol-vip img{width:96%;height:98%;object-position:center}
+.symbol-name{display:none}
+.symbol:before{border-radius:0;inset:3px}
+.payline-overlay{inset:10px;width:calc(100% - 20px);height:calc(100% - 20px)}
+.line-markers{inset-block:9px}
+.kingpin-aside{display:block;position:absolute;width:min(clamp(330px,28vw,420px),calc((100vw - 100%)/2 + 98px));height:85%;right:calc(100% + 12px);left:auto;bottom:92px;margin:0;transform:none;z-index:1;pointer-events:none}
+.kingpin-aside>picture{display:contents}
+.kingpin-aside img{position:absolute;left:0;bottom:0;width:100%;max-height:100%;object-fit:contain;object-position:right bottom;filter:drop-shadow(0 5px 18px #070a24aa);transform-origin:50% 100%;animation:kingpin-idle 10s ease-in-out infinite;will-change:transform}
+@keyframes kingpin-idle{0%,100%{transform:translate3d(0,0,0) rotate(-.2deg) scale(1)}30%{transform:translate3d(2px,-3px,0) rotate(.25deg) scale(1.008)}65%{transform:translate3d(-2px,-1px,0) rotate(-.35deg) scale(1.003)}}
+.control-panel{display:grid;grid-template-columns:210px 1fr 215px;grid-template-rows:minmax(0,1fr);height:82px;align-items:center;gap:8px;padding:7px 10px 7px 20px;border:1px solid #cbbca526;border-radius:44px;background:linear-gradient(180deg,#162334c2,#0c142ad9);backdrop-filter:none;box-shadow:none;margin:10px -70px 0 -295px;width:calc(100% + 365px);position:relative}
+.reference-budget{display:flex;flex-direction:column;gap:5px;align-items:center;width:210px}
+.bet-control{padding:0;border:0;min-width:0;width:100%}
+.bet-control>.control-label{display:none}
+.bet-control>div{display:flex;align-items:center;justify-content:space-between;height:32px;border-radius:22px;background:#091221a8;padding:0 8px}
+.bet-control #bet-value{font-size:19px;font-weight:700;padding:4px 6px;min-height:30px;letter-spacing:0;border:0}
+.bet-control #bet-value:after{content:' CR';font-size:9px;color:#a6bfd1;letter-spacing:.5px}
+.step-button{height:30px;width:30px;border:0;background:none;border-radius:50%;color:#dde8e6}
+.step-button svg{width:18px;height:18px;stroke-width:3}
+.wallet{padding:0;border:0;display:flex;align-items:center;justify-content:center;gap:7px}
+.wallet strong{font-size:16px;line-height:1;font-weight:700}
+.wallet small{font-size:8px;line-height:1;margin:0;color:#96a5b7}
+.balance-mark{font-size:10px;color:#eee4d2}
+.status-strip{height:auto;min-height:45px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;text-align:center;padding:3px 6px;background:none;border:0;border-radius:0;position:static;font-size:15px;color:#faf7f5;line-height:1.25}
+.win-control{display:flex;align-items:center;justify-content:center;gap:6px;padding:0;border:0;line-height:1;font-size:9px;color:#b4b3b8}
+.win-control strong{font-size:13px;font-weight:700;color:#ffd780;line-height:1}
+.win-control small{font-size:7px;margin:0}
+.spin-count{position:static;font-size:9px;letter-spacing:.6px;color:#00e5ff}
+.play-controls{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin:0;padding:0}
+.aux-button{width:43px;height:43px;min-width:43px;border:1px solid #647c964d;border-radius:50%;background:#09101fc9;padding:10px;color:#ece8d9;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px #0006}
+.aux-button svg{width:26px;height:26px}
+.aux-button[aria-pressed=true]{color:#00e5ff;border-color:#00e5ff80;box-shadow:0 0 14px #00e5ff35}
+.spin-button{height:93px;width:93px;margin-right:-5px;border-radius:50%;padding:5px;background:conic-gradient(#dcdac2,#788a9b,#0f1c31,#d7b96e,#ecdcaa,#476b86,#dcdac2);box-shadow:0 0 0 3px #09111f,0 0 0 5px #9dbed02e,0 0 26px #00e5ff22;animation:spin-pulse 4s ease-in-out infinite;position:relative}
+.spin-inner{width:100%;height:100%;background:radial-gradient(circle at 38% 28%,#5b8497,#1a3d54 52%,#0a1b30);border:1px solid #c8ecf299;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 2px 8px #d6fbff2e,inset 0 -5px 10px #0008}
+.spin-inner svg{width:50px;height:50px;color:#ffda80;stroke-width:2.2;filter:drop-shadow(0 0 10px #ffcf4730)}
+.reference-tools{position:fixed;right:22px;top:112px;display:flex;flex-direction:column;gap:16px;z-index:20}
+.reference-tools .icon-button{width:46px;height:46px;border-radius:50%;background:#0b1427b5;border:1px solid #c4dee926;color:#faf1e4;backdrop-filter:blur(8px)}
+.reference-tools .icon-button svg{width:25px;height:25px}
+.demo-disclosure{text-align:center;font-size:7px;letter-spacing:.4px;color:#b0b5c990;line-height:1.4;margin:13px 0 5px}
+.reference-menu{display:flex;flex-direction:column;gap:8px}
+.reference-menu button{display:flex;align-items:center;gap:16px;min-height:54px;padding:12px 15px;border:1px solid #58638457;border-radius:7px;background:#0a152980;color:#f4f3f8;font-size:14px;text-align:left}
+.reference-menu button span{flex:1}
+.reference-menu button>svg{width:22px;height:22px;color:#63eaff}
+.reference-menu button>svg:last-child{width:16px}
+/* Softer typography and a restrained neon stage keep large cash wins readable. */
+.celebration:not(.vip-celebration){background:radial-gradient(ellipse at 50% 48%,#09182ae8 4%,#0c133bd9 42%,#07091be6 80%)}
+.celebration:not(.vip-celebration) .celebration-rays{opacity:.45;background:radial-gradient(ellipse at 50% 42%,#e892ba38,transparent 52%),repeating-conic-gradient(from 0deg at 50% 50%,transparent 0deg 26deg,#00e5ff0a 27deg 31deg,transparent 32deg 54deg)}
+.celebration h2{font-size:clamp(55px,8vw,112px);font-style:normal;letter-spacing:4px;background-image:linear-gradient(#fff7da 3%,#ffd984 34%,#946630 48%,#fff4be 51%,#ffc85b 86%,#e6aa46 98%);text-shadow:none;filter:drop-shadow(0 3px 0 #514333) drop-shadow(0 0 20px #d39a6130)}
+.celebration-content{padding:35px 32px;border-radius:16px;text-shadow:0 3px 15px #000}
+.celebration-content>strong{font-family:'Courier New',monospace;font-weight:700;color:#ffdf9b;letter-spacing:0}
+@media(max-width:1100px) and (min-width:621px){main.reference-game{width:min(820px,calc(100vw - 330px),calc((100svh - 305px)*1.666667));margin-left:260px}.kingpin-aside{width:min(290px,calc((100vw - 100%)/2 + 98px));opacity:1}.reference-masthead>.game-logo{left:-65px;width:51%;bottom:10px}.control-panel{margin-inline:-200px -25px;width:calc(100% + 225px);grid-template-columns:165px 1fr 190px;padding-left:10px}.reference-budget{width:165px}.play-controls{gap:9px}.spin-button{width:80px;height:80px}.spin-inner svg{width:45px;height:45px}.reference-tools{right:11px;top:65px}.reference-tools .icon-button{width:36px;height:36px}.reference-tools .icon-button svg{width:21px;height:21px}.prize-face{height:78px}.prize-brand strong{font-size:20px}.prize-brand small{font-size:6px}.prize-brand span{font-size:8px;letter-spacing:2px}#prize-value{font-size:clamp(30px,4.4vw,48px)}}
+@media(max-width:620px){
+  .game-shell{display:block;min-height:100svh;padding-top:22px}
+  .reference-caption{font-size:8px;left:8px;top:5px;right:8px;text-align:center;letter-spacing:0}
+  main.reference-game{width:100%;padding:0;margin:0}
+  .reference-masthead{height:230px;padding:0 5px;display:block}
+  .reference-masthead>.game-logo{position:absolute;width:80%;height:172px;left:auto;right:0;top:-18px;bottom:auto;margin:0;object-fit:contain;z-index:5}
+  .kingpin-aside{display:block;left:-8px;right:auto;top:0;bottom:auto;width:40%;height:164px;opacity:1;z-index:4;filter:drop-shadow(3px 0 3px #00182d)}
+  .kingpin-aside img{width:112%;left:-10px;bottom:0;max-height:100%;object-position:center bottom}
+  .prize-face{position:absolute;bottom:0;left:5px;right:5px;width:auto;height:64px;padding:5px 6px;gap:4px;border-width:2px}
+  .prize-brand{width:28%;padding:0}
+  .prize-brand small{font-size:5px;letter-spacing:.3px;margin-bottom:3px}
+  .prize-brand strong{font-size:19px}
+  .prize-brand span{font-size:7px;letter-spacing:1.7px;margin-top:3px}
+  .prize-readout{width:72%;padding:2px 2px 3px}
+  #prize-value{font-size:clamp(30px,10vw,45px);letter-spacing:-2px}
+  #prize-value:after{background-size:3px 3px;background-image:radial-gradient(circle at center,transparent .95px,#070c16 1.2px);opacity:.6}
+  .prize-readout small{font-size:4.5px;letter-spacing:.65px;margin-top:2px}
+  .cabinet{border-width:1px;padding:4px;box-shadow:0 0 0 1px #112039,0 5px 25px #0005}
+  .reels{height:auto;aspect-ratio:5/3;gap:1px}
+  .cabinet:before,.cabinet:after{width:2px;top:3px;bottom:3px}
+  .cabinet:before{left:0}.cabinet:after{right:0}
+  .symbol img{width:107%;height:100%;max-width:none;transform:none}
+  .symbol-car img{width:110%;height:96%}.symbol-cocktail img{width:100%;height:94%}.symbol-cash img,.symbol-vip img{width:107%;height:99%}
+  .coin-value{font-size:clamp(16px,5.8vw,25px)}.coin-value small{font-size:4px;letter-spacing:.5px}
+  .line-markers{display:none}
+  .payline-overlay{inset:5px;width:calc(100% - 10px);height:calc(100% - 10px)}
+  .control-panel{display:block;width:100%;height:clamp(235px,calc(100svh - 507px),306px);padding:0;margin:0;border:0;border-radius:0;background:none;backdrop-filter:none;box-shadow:none;position:relative}
+  .status-strip{position:absolute;left:0;right:0;top:0;height:62px;min-height:0;background:#081627b5;backdrop-filter:blur(8px);font-size:13px;line-height:1.25;gap:4px;padding:7px 65px}
+  .win-control{font-size:7px;gap:5px}.win-control strong{font-size:11px}.win-control small{font-size:6px}.spin-count{font-size:7px}
+  .reference-tools{display:contents;position:static}
+  .reference-tools .icon-button{position:absolute;top:9px;width:44px;height:44px;border:0;background:none;backdrop-filter:none}
+  #sound{left:8px}#settings{right:8px}
+  .reference-tools .icon-button svg{width:26px;height:26px}
+  .reference-budget{display:contents}
+  .bet-control{position:absolute;inset:0;pointer-events:none;width:100%;height:100%;padding:0;margin:0;align-self:stretch}
+  .bet-control>div{display:contents}
+  .bet-control button{pointer-events:auto}
+  .bet-control #bet-value{position:absolute;right:0;bottom:14px;width:138px;height:50px;display:flex;align-items:center;justify-content:center;gap:7px;border-radius:30px 0 0 30px;background:#071625c7;border:1px solid #bcc7cd20;border-right:0;font-size:18px;padding:8px 12px;backdrop-filter:blur(10px)}
+  .bet-control #bet-value:after{font-size:8px}
+  #bet-minus,#bet-plus{position:absolute;top:116px;width:39px;height:39px;border:1px solid #cdbe9b42;border-radius:50%;background:#0e1c2ebd;backdrop-filter:blur(8px)}
+  #bet-minus{left:calc(50% - 116px)}#bet-plus{right:calc(50% - 116px)}
+  .step-button svg{width:20px;height:20px}
+  .wallet{position:absolute;left:0;bottom:14px;width:150px;height:50px;display:flex;align-items:center;justify-content:center;border-radius:0 30px 30px 0;border:1px solid #bcc7cd20;border-left:0;background:#071625c7;backdrop-filter:blur(10px);gap:5px;padding:8px 10px}
+  .wallet strong{font-size:18px}.wallet small{font-size:8px}.balance-mark{font-size:8px}
+  .play-controls{display:contents}
+  .spin-button{position:absolute;left:calc(50% - 52px);top:90px;width:104px;height:104px;margin:0;padding:6px;order:unset}
+  .spin-inner svg{width:57px;height:57px}
+  .aux-button{position:absolute;left:13px;width:42px;height:42px;min-width:0;padding:8px;border:0;background:#08182bb5}
+  #turbo{top:88px}#autoplay{top:150px}
+  .aux-button svg{width:27px;height:27px}
+  .demo-disclosure{margin:0 8px 8px;font-size:6px;line-height:1.5;padding-bottom:4px}
+  .celebration-content{padding:25px 20px;max-width:96vw}.celebration h2{font-size:clamp(43px,12vw,62px);letter-spacing:2px}.celebration-content>strong{font-size:48px}
+}
+@media(max-width:620px) and (max-height:730px){.reference-masthead{height:172px}.reference-masthead>.game-logo{height:132px;top:-18px}.kingpin-aside{height:112px;top:-1px}.prize-face{height:56px}.prize-brand strong{font-size:17px}#prize-value{font-size:34px}.control-panel{height:clamp(224px,calc(100svh - 443px),280px)}.spin-button{top:81px;width:90px;height:90px;left:calc(50% - 45px)}#bet-minus,#bet-plus{top:106px}.wallet,.bet-control #bet-value{bottom:12px;height:44px}.aux-button{width:38px;height:38px}#autoplay{top:116px}#turbo{top:73px}.demo-disclosure{font-size:5px;line-height:1.4;margin:0 8px 3px;padding-bottom:1px}}
+@media(min-width:621px) and (max-height:480px){
+  .reference-caption{font-size:7px;top:2px}
+  main.reference-game{width:min(calc(100vw - 150px),calc((100svh - 154px)*1.666667));margin:10px 0 0 85px}
+  .reference-masthead{height:60px}.reference-masthead>.game-logo{height:95px;width:46%;left:-45px;bottom:-10px;margin:0}
+  .prize-face{height:48px;width:64%;padding:3px;gap:1px}.prize-brand small{font-size:4px;margin-bottom:2px}.prize-brand strong{font-size:14px}.prize-brand span{font-size:5px;margin-top:2px;letter-spacing:1px}#prize-value{font-size:27px;letter-spacing:-1.5px}.prize-readout small{font-size:3.5px;letter-spacing:.4px;margin:1px 0 0}#prize-value:after{background-size:3px 3px}
+  .cabinet{padding:4px;border-width:1px}.reels{height:auto;aspect-ratio:5/3;gap:2px}
+  .control-panel{height:56px;grid-template-columns:113px 1fr 144px;gap:4px;margin:7px -35px 0 -65px;width:calc(100% + 100px);padding:5px 9px}
+  .reference-budget{width:113px;gap:3px}.bet-control>div{height:23px;padding:0 3px}.bet-control #bet-value{font-size:12px;min-height:20px;padding:2px}.bet-control #bet-value:after{font-size:6px}.step-button{width:22px;height:22px}.step-button svg{width:13px;height:13px}.wallet strong{font-size:11px}.wallet small{font-size:6px}.wallet{gap:4px}.balance-mark{font-size:6px}
+  .status-strip{font-size:9px;padding:2px;min-height:25px;gap:3px}.win-control{font-size:5px;gap:4px}.win-control strong{font-size:9px}.win-control small{font-size:5px}.spin-count{font-size:5px}
+  .play-controls{gap:8px}.aux-button{height:30px;width:30px;min-width:30px;padding:6px}.aux-button svg{width:19px;height:19px}.spin-button{height:61px;width:61px;margin-right:0;padding:4px}.spin-inner svg{width:35px;height:35px}
+  .kingpin-aside{width:195px;left:-180px;right:auto;height:85%;bottom:58px;display:block}.reference-tools{top:40px;right:9px;gap:10px}.reference-tools .icon-button{width:30px;height:30px}.reference-tools .icon-button svg{width:18px;height:18px}.demo-disclosure{font-size:5px;margin:6px 0 2px}.line-markers{display:none}.payline-overlay{inset:5px;width:calc(100% - 10px);height:calc(100% - 10px)}
+  .coin-value{font-size:20px}.coin-value small{font-size:4px}
+}
+@media(prefers-reduced-motion:reduce){.kingpin-aside img{animation:none;will-change:auto}}

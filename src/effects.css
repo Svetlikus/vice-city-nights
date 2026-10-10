@@ -1,0 +1,33 @@
+/* Moving strips retain three-row geometry; percent travel also scales during resize. */
+.reel-strip.reel-rolling { will-change: transform, filter; }
+.reel-moving .symbol { transition: none; }
+.spinning .symbol img { filter: drop-shadow(0 4px 4px #000); }
+.reel .symbol-name { display: none; }
+
+.cash-field {
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: 8px;
+  contain: layout paint;
+  perspective: 900px;
+}
+.cash-field.cash-field-large { border-radius: 0; z-index: 25; }
+.particle-banknote {
+  position: absolute;
+  display: block;
+  margin: 0;
+  background: url('/assets/effects/banknote.svg') center / 100% 100% no-repeat;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  will-change: transform, opacity;
+  filter: drop-shadow(0 2px 3px #05091650);
+  pointer-events: none;
+}
+.cash-field-large .particle-banknote { filter: drop-shadow(0 3px 5px #05091665); }
+
+@media (prefers-reduced-motion: reduce) {
+  .cash-field { display: none; }
+  .reel-strip.reel-rolling { will-change: auto; }
+}
