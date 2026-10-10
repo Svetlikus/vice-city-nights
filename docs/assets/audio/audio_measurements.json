@@ -1,0 +1,178 @@
+{
+  "main_theme": {
+    "seconds": 86.4,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -16.25,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -2.92,
+    "production_bytes": 3810284,
+    "gzip_bytes": 3408221,
+    "bpm": 100,
+    "bars": 36,
+    "sections": [
+      {
+        "name": "intro",
+        "bars": 4
+      },
+      {
+        "name": "verse",
+        "bars": 8
+      },
+      {
+        "name": "chorus",
+        "bars": 8
+      },
+      {
+        "name": "break",
+        "bars": 4
+      },
+      {
+        "name": "chorus2",
+        "bars": 8
+      },
+      {
+        "name": "outro",
+        "bars": 4
+      }
+    ],
+    "composition": "Original instrumental old-school electro-funk/early-hip-hop radio score",
+    "runtime_mix": "Warm mono 22.05 kHz; full stereo master retained"
+  },
+  "radio_preview": {
+    "seconds": 19.2,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -14.82,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -2.9,
+    "production_bytes": 846764,
+    "gzip_bytes": 773712
+  },
+  "nightclub_theme": {
+    "seconds": 60.0,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -16.02,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -2.87,
+    "production_bytes": 2646044,
+    "gzip_bytes": 2371066,
+    "bpm": 112,
+    "bars": 28,
+    "sections": [
+      {
+        "name": "intro",
+        "bars": 4
+      },
+      {
+        "name": "chorus",
+        "bars": 8
+      },
+      {
+        "name": "break",
+        "bars": 4
+      },
+      {
+        "name": "chorus2",
+        "bars": 8
+      },
+      {
+        "name": "outro",
+        "bars": 4
+      }
+    ],
+    "composition": "Original instrumental old-school electro-funk/early-hip-hop radio score",
+    "runtime_mix": "Warm mono 22.05 kHz; full stereo master retained"
+  },
+  "button_click": {
+    "seconds": 0.085,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -16.72,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -2.85,
+    "production_bytes": 3794,
+    "gzip_bytes": 3426
+  },
+  "reel_spin": {
+    "seconds": 0.8,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -18.91,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -11.49,
+    "production_bytes": 35324,
+    "gzip_bytes": 29953
+  },
+  "reel_stop": {
+    "seconds": 0.17,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -17.88,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -4.37,
+    "production_bytes": 7542,
+    "gzip_bytes": 6705
+  },
+  "coin_win": {
+    "seconds": 0.95,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -15.48,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -3.05,
+    "production_bytes": 41940,
+    "gzip_bytes": 37032
+  },
+  "celebration": {
+    "seconds": 6.4,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -17.99,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -2.93,
+    "production_bytes": 282284,
+    "gzip_bytes": 220005
+  },
+  "vip_transition": {
+    "seconds": 1.65,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -16.9,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -5.33,
+    "production_bytes": 72810,
+    "gzip_bytes": 66699
+  },
+  "neon_electric": {
+    "seconds": 0.43,
+    "sample_rate": 44100,
+    "channels": 2,
+    "peak_dbfs": -2.85,
+    "rms_dbfs": -21.07,
+    "production_sample_rate": 22050,
+    "production_channels": 1,
+    "production_peak_dbfs": -6.52,
+    "production_bytes": 19008,
+    "gzip_bytes": 16745
+  }
+}

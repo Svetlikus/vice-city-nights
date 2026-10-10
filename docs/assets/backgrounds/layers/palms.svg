@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1000" viewBox="0 0 2000 1000" role="img" aria-label="Original edge palm silhouettes">
+<defs><g id="crown" fill="#061323"><path d="M0 0C-77-80-155-61-178-23C-110-49-55-30 0 5C-73-42-149-15-185 24C-112 2-50 11 4 12C-76 2-124 43-133 84C-72 45-31 33 11 14C-24 51-37 104-23 144C-4 82 4 42 17 8C43 30 76 70 98 123C103 53 72 13 21 0C84 25 146 32 192 55C153 8 88-21 15-5C79-41 146-42 188-11C154-76 84-76 8-9C63-68 80-103 71-136C28-80 20-44 0 0Z"/><path d="M0 2C-61-67-100-92-145-88C-97-49-52-19 3 9C-18-60-40-108-88-128C-47-77-23-40 9 7Z"/></g></defs>
+<g opacity=".96"><path d="M36 1000C120 755 161 451 151 177L174 178C197 461 170 765 120 1000Z" fill="#061323"/><use href="#crown" transform="translate(162 180) scale(1.1) rotate(-5)"/>
+<path d="M281 1000C316 768 315 547 295 389L306 389C339 570 344 777 315 1000Z" fill="#09182b"/><use href="#crown" transform="translate(299 391) scale(.5) rotate(12)" fill="#09182b"/>
+<path d="M1946 1000C1893 775 1845 442 1865 192L1884 193C1882 469 1933 784 1998 1000Z" fill="#061323"/><use href="#crown" transform="translate(1876 196) scale(1.15) rotate(9)"/>
+<path d="M1763 1000C1743 783 1756 585 1791 416L1802 418C1779 601 1781 802 1807 1000Z" fill="#09182b"/><use href="#crown" transform="translate(1796 420) scale(.67) rotate(-11)"/>
+</g><g fill="none" stroke="#00c9b7" stroke-opacity=".18" stroke-width="2"><path d="M151 181C161 435 131 720 71 956"/><path d="M1882 193C1879 461 1924 738 1970 937"/></g>
+</svg>
