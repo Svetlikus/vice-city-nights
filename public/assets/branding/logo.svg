@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500" role="img" aria-labelledby="t">
+<title id="t">Vice City Nights — Own the city. Rule the night.</title>
+<defs>
+<linearGradient id="chrome" x2="0" y2="1"><stop stop-color="#fff6ed"/><stop offset=".38" stop-color="#e9fafb"/><stop offset=".46" stop-color="#8499b2"/><stop offset=".51" stop-color="#263e61"/><stop offset=".54" stop-color="#caffff"/><stop offset=".68" stop-color="#fff"/><stop offset="1" stop-color="#94afc3"/></linearGradient>
+<linearGradient id="pink" x2=".25" y2="1"><stop stop-color="#ffd7ed"/><stop offset=".45" stop-color="#ff74b8"/><stop offset="1" stop-color="#ff2d95"/></linearGradient>
+<linearGradient id="sun" x2="0" y2="1"><stop stop-color="#ffcb47"/><stop offset=".5" stop-color="#ff8c42"/><stop offset="1" stop-color="#e91ead"/></linearGradient>
+<linearGradient id="gold" x2="1" y2="1"><stop stop-color="#fff6b2"/><stop offset=".5" stop-color="#bd7d28"/><stop offset="1" stop-color="#ffdc79"/></linearGradient>
+<filter id="pinkGlow" x="-30%" y="-50%" width="160%" height="210%"><feGaussianBlur stdDeviation="4" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#05031a" flood-opacity=".75"/></filter>
+<clipPath id="sunclip"><ellipse cx="550" cy="194" rx="173" ry="140"/></clipPath>
+</defs>
+<g opacity=".87" clip-path="url(#sunclip)"><ellipse cx="550" cy="194" rx="173" ry="140" fill="url(#sun)"/><path d="M370 171h360M370 187h360M370 207h360M370 231h360M370 258h360M370 289h360" stroke="#27143e" stroke-width="7"/></g>
+<path d="M388 278v-42h27v-20h34v-30h19v32h32v-52h23v-25h9v25h21v36h27v-29h22v-21h12v21h23v58h31v-39h34v46h30v40Z" fill="#16112f" opacity=".9"/>
+<g fill="#14182f" stroke="#00c9b7" stroke-width="1.3" opacity=".8"><path d="M238 313q-19-96-5-171l9 1q-3 81 20 169Z"/><path d="M237 145q-65-74-127-26 58-12 123 33-83-37-125-3 77 3 126 11-44 5-70 45 52-24 73-45 35-30 100-6-36-43-99-13 36-30 72-33-49-20-73 37Z"/><path d="M849 315q19-100 4-172l-9 1q4 82-21 170Z"/><path d="M851 145q63-74 128-26-59-12-124 33 83-37 126-3-78 3-127 11 45 5 71 45-53-24-74-45-35-30-101-6 37-43 100-13-36-30-73-33 50-20 74 37Z"/></g>
+<g transform="translate(54 0) skewX(-10)" filter="url(#shadow)"><text x="540" y="271" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="144" font-weight="900" letter-spacing="-5" stroke="#1b2444" stroke-width="12" paint-order="stroke">VICE CITY</text><text x="540" y="268" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="144" font-weight="900" letter-spacing="-5" fill="url(#chrome)" stroke="#e3f9ff" stroke-width="1.7" paint-order="stroke">VICE CITY</text></g>
+<path d="m225 314 134-2m379 0 136 2" stroke="url(#gold)" stroke-width="3"/>
+<g filter="url(#pinkGlow)"><text x="570" y="393" text-anchor="middle" transform="rotate(-5 570 343)" font-family="Brush Script MT, Snell Roundhand, cursive" font-style="italic" font-weight="600" font-size="171" letter-spacing="-3" fill="url(#pink)" stroke="#ff2d95" stroke-width="1.3" paint-order="stroke">Nights</text><path d="M390 413q181 12 387-39" fill="none" stroke="#ff4ca5" stroke-width="5" stroke-linecap="round"/></g>
+<text x="550" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="8" fill="#dcebed">OWN THE CITY. RULE THE NIGHT.</text>
+<path d="m928 212 4 17 17 4-17 4-4 17-4-17-17-4 17-4Z" fill="#d8ffff" opacity=".9"/>
+</svg>
